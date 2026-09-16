@@ -6,6 +6,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.serialization")
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.20"
 }
 
 android {
@@ -18,6 +19,9 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+    lint {
+        disable.add("NullSafeMutableLiveData")
+    }
     }
 
     buildTypes {
@@ -41,11 +45,23 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
-    }
+
     packaging {
         resources.excludes.add("/META-INF/{AL2.0,LGPL2.1}")
+    }
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("debug.jks")
+            storePassword = "android"
+            keyAlias = "debug"
+            keyPassword = "android"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.getByName("debug") // Or your release keystore
+        }
     }
 }
 
@@ -64,7 +80,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core")
 
     // Wear-native text entry (voice / suggestions / emoji keyboard)
-    implementation("androidx.wear:wear-input:1.1.0")
+    implementation("androidx.wear:wear-input:1.2.0")
 
     // Small persisted settings store
     implementation("androidx.datastore:datastore-preferences:1.1.1")
@@ -75,3 +91,6 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
+
+
+

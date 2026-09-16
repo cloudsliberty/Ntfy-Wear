@@ -1,11 +1,11 @@
 package io.ntfy.wear.ui
 
+import android.app.RemoteInput
 import android.app.Activity
 import android.content.Intent
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.runtime.Composable
-import androidx.core.app.RemoteInput
 import androidx.wear.input.RemoteInputIntentHelper
 import androidx.wear.input.wearableExtender
 

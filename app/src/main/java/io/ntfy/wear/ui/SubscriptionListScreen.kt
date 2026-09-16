@@ -1,5 +1,9 @@
 package io.ntfy.wear.ui
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -22,7 +26,6 @@ import androidx.wear.compose.material.Text
 import androidx.wear.compose.material.TimeText
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Circle
 import io.ntfy.wear.data.Subscription
 
 @Composable
@@ -59,10 +62,13 @@ fun SubscriptionListScreen(
                     label = { Text(sub.displayTitle) },
                     secondaryLabel = { Text(sub.displaySubtitle) },
                     icon = {
-                        Icon(
-                            imageVector = Icons.Filled.Circle,
-                            contentDescription = null,
-                            tint = if (sub.enabled) Color(0xFF4FD8C4) else Color.Gray
+                        Box(
+                            modifier = Modifier
+                                .size(10.dp)
+                                .background(
+                                    color = if (sub.enabled) Color(0xFF4FD8C4) else Color.Gray,
+                                    shape = CircleShape
+                                )
                         )
                     },
                     colors = ChipDefaults.secondaryChipColors(),
