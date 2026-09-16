@@ -1,8 +1,8 @@
-<img src="icon.png" width="128" alt="App Icon">
-## NTFY-WEAR
+<center><img src="icon.png" width="128" alt="App Icon">
+# NTFY-WEAR</center>
 
 
-# ntfy for Wear OS
+## ntfy for Wear OS
 
 **Developer:** Abdul Jaleel Adenpulan
 **GitHub:** [github.com/cloudsliberty](https://github.com/cloudsliberty/ntfy-wear)
