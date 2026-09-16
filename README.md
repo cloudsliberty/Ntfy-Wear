@@ -1,3 +1,5 @@
+<img src="icon.png" width="128" alt="App Icon">
+
 # ntfy for Wear OS
 
 **Developer:** Abdul Jaleel Adenpulan
