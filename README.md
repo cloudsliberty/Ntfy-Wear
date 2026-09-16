@@ -3,6 +3,8 @@
 **Developer:** Abdul Jaleel Adenpulan
 **GitHub:** [github.com/cloudsliberty](https://github.com/cloudsliberty/ntfy-wear)
 
+***self signed sideloadabel apk: [ntfy-wear-self_signed v1.0.apk](https://github.com/cloudsliberty/Ntfy-Wear/blob/main/APK/ntfy-wear-self_signed.apk)***
+
 A minimal, standalone [ntfy](https://ntfy.sh) client built specifically for
 Wear OS (round screens, small battery, no phone required). It is **not** a
 port of the [official Android app](https://github.com/binwiederhier/ntfy-android) -
