@@ -1,6 +1,7 @@
-<center><img src="icon.png" width="128" alt="App Icon">
-## **NTFY-WEAR**</center>
-
+<div align="center">
+  <img src="icon.png" width="128" alt="App Icon">
+  <h1>NTFY-WEAR</h1>
+</div>
 
 ## ntfy for Wear OS
 
