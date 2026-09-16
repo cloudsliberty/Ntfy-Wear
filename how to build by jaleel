@@ -1,0 +1,7 @@
+use following 
+
+gradle build
+
+or
+
+gradle assembleDebug
