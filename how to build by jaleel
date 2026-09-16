@@ -1,18 +1,18 @@
 use following 
 
-gradle build
+# 1. Stop any running background Gradle daemons
+./gradlew --stop
 
-or
+# 2. Clean build artifacts
+./gradlew clean
 
-gradle assembleDebug
+# 3. Manually remove the build directories (if running in a Linux/container environment)
+rm -rf build app/build
+
+# 4. Rebuild with cache disabled and forced task rerun
+./gradlew :app:compileDebugKotlin --no-build-cache --rerun-tasks --console=plain
 
 
 
--------------------------
-in case getting cached error 
-
-gradle --stop
-rm -rf /config/.gradle/caches
-rm -rf .gradle
-gradle wrapper --gradle-version 8.10.2
-./gradlew assembleDebug --no-daemon
+final release build
+./gradlew :app:assembleRelease
