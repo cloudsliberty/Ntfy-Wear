@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ntfy</string>
+    <string name="service_channel_name">ntfy connection</string>
+    <string name="service_notification_text">Listening for notifications</string>
+    <string name="developer_name">Abdul Jaleel Adenpulan</string>
+    <string name="developer_github">github.com/cloudsliberty</string>
+</resources>
