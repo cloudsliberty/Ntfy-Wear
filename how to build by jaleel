@@ -5,3 +5,14 @@ gradle build
 or
 
 gradle assembleDebug
+
+
+
+-------------------------
+in case getting cached error 
+
+gradle --stop
+rm -rf /config/.gradle/caches
+rm -rf .gradle
+gradle wrapper --gradle-version 8.10.2
+./gradlew assembleDebug --no-daemon
