@@ -59,8 +59,8 @@ dependencies {
     // Compose for Wear OS (round-screen aware components)
     implementation(platform("androidx.compose:compose-bom:2024.06.00"))
     implementation("androidx.compose.ui:ui")
-    implementation("androidx.wear.compose:wear-compose-material:1.4.0")
-    implementation("androidx.wear.compose:wear-compose-foundation:1.4.0")
+    implementation("androidx.wear.compose:compose-material:1.6.2")
+    implementation("androidx.wear.compose:compose-foundation:1.6.2")
     implementation("androidx.compose.material:material-icons-core")
 
     // Wear-native text entry (voice / suggestions / emoji keyboard)

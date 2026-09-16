@@ -1,7 +1,7 @@
 # ntfy for Wear OS
 
 **Developer:** Abdul Jaleel Adenpulan
-**GitHub:** [github.com/cloudsliberty](https://github.com/cloudsliberty/Ntfy-Wear)
+**GitHub:** [github.com/cloudsliberty](https://github.com/cloudsliberty)
 
 A minimal, standalone [ntfy](https://ntfy.sh) client built specifically for
 Wear OS (round screens, small battery, no phone required). It is **not** a
